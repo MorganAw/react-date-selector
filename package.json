@@ -1,0 +1,24 @@
+{
+  "name": "react-date-selector",
+  "version": "0.0.1",
+  "description": "A date selection React component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MorganCAw/react-date-selector.git"
+  },
+  "keywords": [
+    "React",
+    "calendar",
+    "date"
+  ],
+  "author": "Morgan Aw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MorganCAw/react-date-selector/issues"
+  },
+  "homepage": "https://github.com/MorganCAw/react-date-selector#readme"
+}
