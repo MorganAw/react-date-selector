@@ -1,10 +1,8 @@
 'use strict';
 
-var Calendar = ReactDateSelector.ReactDateSelector.Calendar;
-var DatePicker = ReactDateSelector.ReactDateSelector.DatePicker;
-var DateRangePicker = ReactDateSelector.ReactDateSelector.DateRangePicker;
-
-console.log(ReactDateSelector);
+var Calendar = ReactDateSelector.Calendar;
+var DatePicker = ReactDateSelector.DatePicker;
+var DateRangePicker = ReactDateSelector.DateRangePicker;
 
 console.log(ReactDateSelector['Calendar']);
 console.log(DatePicker);
