@@ -13,7 +13,6 @@ module.exports = {
   ],
   output: {
     path: __dirname + '/dist/',
-    library: "ReactDateSelector",
     filename: "ReactDateSelector.js"
   },
   module: {

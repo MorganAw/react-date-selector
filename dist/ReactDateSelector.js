@@ -1,4 +1,3 @@
-var ReactDateSelector =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -57,7 +56,7 @@ var ReactDateSelector =
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.DateRangePicker = exports.DatePicker = exports.Calendar = undefined;
+	exports.ReactDateSelector = undefined;
 	
 	var _Calendar = __webpack_require__(2);
 	
@@ -73,9 +72,14 @@ var ReactDateSelector =
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	exports.Calendar = _Calendar2.default;
-	exports.DatePicker = _DatePicker2.default;
-	exports.DateRangePicker = _DateRangePicker2.default;
+	var ReactDateSelector = {
+	  Calendar: _Calendar2.default,
+	  DatePicker: _DatePicker2.default,
+	  DateRangePicker: _DateRangePicker2.default
+	};
+	
+	var ReactDateSelector = exports.ReactDateSelector = undefined;
+	// export { Calendar, DatePicker, DateRangePicker };
 
 /***/ },
 /* 2 */
