@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 import moment from 'moment';
 
 export default class DatePicker extends React.Component {
