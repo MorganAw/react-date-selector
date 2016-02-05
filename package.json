@@ -1,11 +1,11 @@
 {
   "name": "react-date-selector",
-  "version": "0.0.12",
+  "version": "0.0.14",
   "description": "A date selection React component",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "test": "babel ./tests/rendered/app.js -o ./tests/rendered/compiled.js"
+    "build": "babel src --out-dir dist",
+    "test": "webpack"
   },
   "repository": {
     "type": "git",

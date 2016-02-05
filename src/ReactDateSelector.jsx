@@ -8,5 +8,5 @@ var ReactDateSelector = {
   DateRangePicker: DateRangePicker
 };
 
-export var ReactDateSelector;
+export { ReactDateSelector as default };
 // export { Calendar, DatePicker, DateRangePicker };

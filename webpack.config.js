@@ -9,11 +9,11 @@ var config = require('./config.js');*/
 module.exports = {
   devtool: 'source-map',
   entry: [
-    './src/ReactDateSelector.jsx'
+    './tests/rendered/app.js'
   ],
   output: {
-    path: __dirname + '/dist/',
-    filename: "ReactDateSelector.js"
+    path: __dirname + '/tests/rendered/',
+    filename: "compiled.js"
   },
   module: {
     loaders: [{
