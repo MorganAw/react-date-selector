@@ -63,17 +63,15 @@
 	
 	var _index = __webpack_require__(160);
 	
-	var ReactDateSelector = _interopRequireWildcard(_index);
-	
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	var _index2 = _interopRequireDefault(_index);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var Calendar = ReactDateSelector.Calendar;
-	var DatePicker = ReactDateSelector.DatePicker;
-	var DateRangePicker = ReactDateSelector.DateRangePicker;
+	var Calendar = _index2.default.Calendar;
+	var DatePicker = _index2.default.DatePicker;
+	var DateRangePicker = _index2.default.DateRangePicker;
 	
-	console.log(ReactDateSelector);
+	console.log(_index2.default);
 	
 	// console.log(Calendar);
 	// console.log(DatePicker);
@@ -19722,12 +19720,13 @@
 	    "use strict";
 	    function n(e) {
 	      return e && e.__esModule ? e : { "default": e };
-	    }Object.defineProperty(t, "__esModule", { value: !0 }), t.DateRangePicker = t.DatePicker = t.Calendar = void 0;var a = r(2),
+	    }Object.defineProperty(t, "__esModule", { value: !0 }), t["default"] = void 0;var a = r(2),
 	        o = n(a),
 	        l = r(6),
 	        u = n(l),
 	        c = r(7),
-	        i = n(c);t.Calendar = o["default"], t.DatePicker = u["default"], t.DateRangePicker = i["default"];
+	        i = n(c),
+	        f = { Calendar: o["default"], DatePicker: u["default"], DateRangePicker: i["default"] };t["default"] = f;
 	  }, function (e, t, r) {
 	    "use strict";
 	    function n(e) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import * as ReactDateSelector from '../../index.js';
+import ReactDateSelector from '../../index.js';
 
 var Calendar = ReactDateSelector.Calendar;
 var DatePicker = ReactDateSelector.DatePicker;
