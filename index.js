@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./dist/ReactDateSelector');
+module.exports = require('./dist/ReactDateSelector.min.js');

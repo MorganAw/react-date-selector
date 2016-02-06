@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ReactDateSelector from '../../index.js';
+import * as ReactDateSelector from '../../index.js';
 
 var Calendar = ReactDateSelector.Calendar;
 var DatePicker = ReactDateSelector.DatePicker;
@@ -12,9 +12,14 @@ console.log(ReactDateSelector);
 // console.log(DatePicker);
 // console.log(DateRangePicker);
 
+function thing() {
+  console.log('hello');
+}
+
 ReactDOM.render(
   <div className="tests">
-    <Calendar />
+    <Calendar
+      callback={ thing } />
     <DatePicker />
     <DateRangePicker />
   </div>,

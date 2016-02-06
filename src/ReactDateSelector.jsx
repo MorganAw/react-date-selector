@@ -1,12 +1,5 @@
-import Calendar from './Calendar/Calendar';
-import DatePicker from './DatePicker/DatePicker';
-import DateRangePicker from './DateRangePicker/DateRangePicker';
+import Calendar from './Components/Calendar';
+import DatePicker from './Components/DatePicker';
+import DateRangePicker from './Components/DateRangePicker';
 
-var ReactDateSelector = {
-  Calendar: Calendar,
-  DatePicker: DatePicker,
-  DateRangePicker: DateRangePicker
-};
-
-export { ReactDateSelector as default };
-// export { Calendar, DatePicker, DateRangePicker };
+export { Calendar, DatePicker, DateRangePicker };

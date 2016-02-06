@@ -4,7 +4,9 @@
   "description": "A date selection React component",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir dist",
+    "build": "npm run build-dist && npm run build-test",
+    "build-dist": "webpack --config webpack.dist.config.js --optimize-minimize --optimize-dedupe",
+    "build-test": "webpack --config webpack.test.config.js",
     "test": "webpack"
   },
   "repository": {

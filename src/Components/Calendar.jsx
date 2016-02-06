@@ -1,16 +1,44 @@
 import React from 'react';
 import moment from 'moment';
+import Header from './Header';
 
+// Calendar Component (only export)
 export default class Calendar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    let now = moment();
+    console.log('Creating Calendar with anchor date:', this.props.anchor);
+    this.state = {
+      anchor: this.props.anchor === undefined ? now : this.props.anchor,
+      active: this.props.initial ? this.props.initial : now,
+      callback: this.props.callback
+    };
   }
 
+  /* ---===== { Custom Methods } =====--- */
+
+  /* ---===== { React Lifecycle Methods } =====--- */
   render() {
+    // Set Calendar table
+    var rows = 
+      <div className="temp">
+        Temp
+      </div>;
     return(
-      <div className="__react-calendar-selector__">
-        Calendar
+      <div className="__rds-calendar-selector__">
+        <Header />
+        <div className="__rds-calendar-table__">
+          <div className="__rds-calendar-row__ __rds-calendar-daylabels__">
+            <p className="__rds-calendar-day__"><b>S</b></p>
+            <p className="__rds-calendar-day__"><b>M</b></p>
+            <p className="__rds-calendar-day__"><b>T</b></p>
+            <p className="__rds-calendar-day__"><b>W</b></p>
+            <p className="__rds-calendar-day__"><b>T</b></p>
+            <p className="__rds-calendar-day__"><b>F</b></p>
+            <p className="__rds-calendar-day__"><b>S</b></p>
+          </div>
+          { rows }
+        </div>
       </div>
     );
   }
@@ -19,8 +47,25 @@ export default class Calendar extends React.Component {
 Calendar.propTypes = {
   anchor: React.PropTypes.object,
   initial: React.PropTypes.object,
-  callback: React.PropTypes.func
+  callback: React.PropTypes.func.isRequired,
+  // Add optional header prop
 }
+
+/*
+// Day Component
+class DayComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  render() {
+    return(
+      <p className="__rds-calendar-day__"><b>{ date }</b></p>
+    );
+  }
+}
+*/
 
 // --------======= Copy/Pasted Below ==========-----------
 // var now = moment();
@@ -61,14 +106,6 @@ Calendar.propTypes = {
 //       active_d: date
 //     });
 //     this.props.onChange(date.toDate());
-//   }
-//   hasTLapse(date) {
-//     for(let counter = 0; counter < this.props.tLapseDates.length; counter++) {
-//       if(sameDay(date, this.props.tLapseDates[counter])) {
-//         return true;
-//       }
-//     }
-//     return false;
 //   }
 //   render() {
 //     // console.log('*** Rendering Calendar ***');

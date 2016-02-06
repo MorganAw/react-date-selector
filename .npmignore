@@ -26,3 +26,6 @@ tests
 
 # Webpack config
 webpack.config.js
+
+# Dev Mapping
+*.map
